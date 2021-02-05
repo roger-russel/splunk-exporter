@@ -1,0 +1,5 @@
+package splunk
+
+func login() {
+
+}

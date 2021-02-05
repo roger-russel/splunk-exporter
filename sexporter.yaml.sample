@@ -1,0 +1,8 @@
+splunk:
+  url:
+  ssl: false
+
+queries:
+  - name:
+    query:
+    output:
