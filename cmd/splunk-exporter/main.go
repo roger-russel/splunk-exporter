@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/roger-russel/splunk-exporter/internal/cmd"
-	v "github.com/roger-russel/splunk-exporter/internal/cmd/version"
+	"github.com/roger-russel/splunk-exporter/internal/cmd/dto"
 )
 
 var version string
@@ -19,7 +19,7 @@ func main() {
 		}
 	}()
 
-	cmd.Root(v.FullVersion{
+	cmd.Root(dto.FullVersion{
 		Version: version,
 		Commit:  commit,
 		Date:    date,

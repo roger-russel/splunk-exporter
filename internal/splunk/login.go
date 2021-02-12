@@ -1,5 +1,5 @@
 package splunk
 
-func login() {
+func login(user, password string) {
 
 }

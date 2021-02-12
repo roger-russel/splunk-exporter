@@ -3,14 +3,12 @@ package cmd
 import (
 	"fmt"
 
-	v "github.com/roger-russel/splunk-exporter/internal/cmd/version"
+	"github.com/roger-russel/splunk-exporter/internal/cmd/dto"
 	"github.com/spf13/cobra"
 )
 
-//FullVersion information
-
 //Version of the binary built
-func Version(vf v.FullVersion) (versionCmd *cobra.Command) {
+func Version(vf dto.FullVersion) (versionCmd *cobra.Command) {
 
 	versionCmd = &cobra.Command{
 		Use:   "version",
