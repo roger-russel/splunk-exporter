@@ -3,8 +3,6 @@ splunk:
   ssl: false
 
 queries:
-  - name:
-    query:
-    output:
-
-   
+  - name: "Some query"
+    query: "index=xtop level=error"
+    output: error-YYYYMMDD.csv
